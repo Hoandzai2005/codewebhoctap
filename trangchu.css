@@ -1,0 +1,180 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    border: 1px groove gainsboro;
+}
+header #logo{
+    background-color: rgb(52, 132, 202);
+    float: left;
+    margin-left: 150px;
+}
+#logo img{
+    width: 99px;
+    height: 99px;
+}
+.head{
+    display: flex;
+    margin-left: 250px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.head li{
+    list-style-type: none;
+    margin: auto;
+}
+.head input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px groove gainsboro;
+}
+.head #phone{
+    color: orange;
+    margin-left: 350px;
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.head #login button{
+    color: gray;
+    background-color: white;
+    border: 2px groove gainsboro;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#logout button{
+    color: white;
+    background-color: orange;
+    border: 1px groove orange;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 150px;
+    font-weight: bold;
+}
+.menu ul{
+    display: flex;
+    margin-right: 500px;
+}
+.menu li{
+    list-style-type: none;
+    margin: auto;
+    font-size: 17px;
+    font-weight: bold;
+    color: gray;
+}
+.menu li:hover{
+    color: rgb(52, 132, 202);
+}
+.list{
+    float: left;
+    border: 2px groove whitesmoke;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+.list h1{
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(74, 72, 72);
+}
+.list li{
+    list-style-type: none;
+    color: rgb(74, 72, 72);
+    padding-top: 10px;
+}
+.list .sub-menu{
+    position: absolute;
+    display: none;
+    top: auto;
+    left: auto;
+    width: 70%;
+    height: auto;
+}
+.sub-menu{
+    border: 1px solid black;
+}
+.list li:hover .sub-menu{
+    display: flex;
+    background-color: white;
+}
+#listmenu-1 div{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(52, 132, 202);
+    margin-right: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.sub-menu #listmenu-1 li:hover{
+    display: flex;
+    color: rgb(52, 132, 202);
+}   
+#listmenu-1 h3{
+    color: rgb(52, 132, 202);
+}
+#listmenu-1 h4{
+    color: rgb(52, 132, 202);
+}
+#listmenu-2 img{
+    margin-left: 650px;
+}
+.slideshow {
+    width: 700px;
+    height: 400px;
+    overflow: auto;
+    position: relative;
+}
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}  
+.slideshow img.active {
+    opacity: 1;
+}  
+@keyframes slide {
+    0% { left: 0; }
+    33.3% { left: 0; }
+    66.6% { left: -100%; }
+    100% { left: -100%; }
+}
+.slideshow img {
+    animation: slide 5s infinite;
+    position: absolute;
+    left: 0;
+}
+.box{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(52, 132, 202);
+    z-index: -1;
+}
+footer .link{
+    margin-top: 180px;
+    text-align: center;
+    background: rgb(52, 132, 202);
+    color: #f1f1f1;
+    padding: 15px;
+
+}
+footer .link a img{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+body main{
+    background-color: aquamarine;
+}
